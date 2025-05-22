@@ -1,9 +1,26 @@
 import Image from "next/image";
+import { Input } from "@/components/ui/input";
+import { Button } from "@/components/ui/button";
 
 export default function Home() {
   return (
     <div className="grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20 font-[family-name:var(--font-geist-sans)]">
       <main className="flex flex-col gap-[32px] row-start-2 items-center sm:items-start">
+        <div className="w-full max-w-md p-4 border rounded-lg shadow-md">
+          <h2 className="text-xl font-semibold text-center mb-4">Upload PDF for OCR</h2>
+          <form action="/api/ocr" method="POST" encType="multipart/form-data" className="space-y-4">
+            <div>
+              <label htmlFor="pdf-file" className="block text-sm font-medium text-gray-700 mb-1">
+                Select PDF file:
+              </label>
+              <Input id="pdf-file" name="file" type="file" accept=".pdf" required />
+            </div>
+            <Button type="submit" className="w-full">
+              Extract Text
+            </Button>
+          </form>
+        </div>
+
         <Image
           className="dark:invert"
           src="/next.svg"
