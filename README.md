@@ -38,7 +38,9 @@ Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/bui
 
 ## Shadcn Integration
 
-This project is configured to use [shadcn/ui](https://ui.shadcn.com). After installing dependencies you can add new components using the CLI:
+This project is configured to use [shadcn/ui](https://ui.shadcn.com). After cloning or pulling updates, install dependencies with `npm install`.
+Once dependencies are installed you can add new components using the CLI:
+
 
 ```bash
 npx shadcn-ui@latest add button
