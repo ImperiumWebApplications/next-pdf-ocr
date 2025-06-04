@@ -48,5 +48,4 @@ Components will be generated in `components/ui` and use the Tailwind configurati
 
 ## PDF Text Extraction
 
-Open the homepage and drag a PDF onto the drop zone or use the **Choose File** button. The file is sent to `/api/extract` and the extracted text is rendered on the page.
-
+Visit `/upload` to upload a text-only PDF. The server extracts the text using `pdf-parse` and the page renders the result.
