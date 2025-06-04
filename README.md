@@ -41,6 +41,7 @@ Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/bui
 This project is configured to use [shadcn/ui](https://ui.shadcn.com). After cloning or pulling updates, install dependencies with `npm install`.
 Once dependencies are installed you can add new components using the CLI:
 
+
 ```bash
 npx shadcn-ui@latest add button
 ```
@@ -50,3 +51,4 @@ Components will be generated in `components/ui` and use the Tailwind configurati
 ## PDF Text Extraction
 
 Open the homepage and drag a PDF onto the drop zone or use the **Choose File** button. The file is sent to `/api/extract` and the extracted text is rendered on the page.
+
