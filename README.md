@@ -35,3 +35,17 @@ The easiest way to deploy your Next.js app is to use the [Vercel Platform](https
 
 Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
 # next-pdf-ocr
+
+## Shadcn Integration
+
+This project is configured to use [shadcn/ui](https://ui.shadcn.com). After installing dependencies you can add new components using the CLI:
+
+```bash
+npx shadcn-ui@latest add button
+```
+
+Components will be generated in `components/ui` and use the Tailwind configuration in `components.json`.
+
+## PDF Text Extraction
+
+Open the homepage and drag a PDF onto the drop zone or use the **Choose File** button. The file is sent to `/api/extract` and the extracted text is rendered on the page.
